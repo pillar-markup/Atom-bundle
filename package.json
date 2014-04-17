@@ -1,0 +1,17 @@
+{
+  "name": "language-pillar",
+  "version": "0.0.1",
+  "description": "Pillar language support for atom",
+  "license": "MIT",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Uko/language-pillar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Uko/language-pillar/issues"
+  }
+}

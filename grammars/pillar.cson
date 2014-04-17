@@ -1,0 +1,15 @@
+'fileTypes': [
+  'pillar',
+  'pier'
+]
+
+'name': 'Pillar'
+
+'patterns': [
+  {
+    'match': '^!{1,6}.+$'
+    'name': 'markup.heading.gfm'
+  }
+]
+
+'scopeName': 'source.pillar'
