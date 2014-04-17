@@ -9,7 +9,21 @@
   {
     'match': '^!{1,6}.+$'
     'name': 'markup.heading.gfm'
+  },
+  {
+    'match': '\\*((.+)>)?\\S+\\*'
+    'name': 'markup.link'
+    'captures':
+      '2':
+        'name': 'entity'
+  },
+  {
+    'match': '\\+((.+)>)?\\S+\\+'
+    'name': 'markup.link'
+    'captures':
+      '2':
+        'name': 'entity'
   }
 ]
 
-'scopeName': 'source.pillar'
+'scopeName': 'source.gfm.pillar'
