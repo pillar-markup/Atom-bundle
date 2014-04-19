@@ -1,29 +1,69 @@
 'fileTypes': [
-  'pillar',
+  'pillar'
   'pier'
 ]
-
 'name': 'Pillar'
-
 'patterns': [
   {
     'match': '^!{1,6}.+$'
-    'name': 'markup.heading.gfm'
-  },
+    'name': 'markup.heading.pillar'
+  }
   {
-    'match': '\\*((.+)>)?\\S+\\*'
-    'name': 'markup.link'
-    'captures':
-      '2':
-        'name': 'entity'
-  },
+    'match': '"".+""'
+    'name': 'markup.bold.pillar'
+  }
   {
-    'match': '\\+((.+)>)?\\S+\\+'
-    'name': 'markup.link'
-    'captures':
-      '2':
-        'name': 'entity'
+    'match': '\'\'.+\'\''
+    'name': 'markup.italic.pillar'
+  }
+  {
+    'match': '--.+--'
+    'name': 'markup.other.stri­ket­hro­ugh.pillar'
+  }
+  {
+    'match': '__.+__'
+    'name': 'markup.underline.pillar'
+  }
+  {
+    'match': '==.+=='
+    'name': 'markup.raw.pillar'
+  }
+  {
+    'match': '@@.+@@'
+    'name': 'markup.other.subs­cript.pillar'
+  }
+  {
+    'match': '\\^\\^.+\\^\\^'
+    'name': 'markup.other.su­pers­cri­pt.pillar'
+  }
+  {
+    'match': '\\*.+\\*'
+    'name': 'markup.underline.link.pillar'
+  }
+  {
+    'match': '\\+.+\\+'
+    'name': 'markup.underline.link.pillar'
+  }
+  {
+    'match': '^- .+$'
+    'name': 'markup.list.unordered.pillar'
+  }
+  {
+    'match': '^# .+$'
+    'name': 'markup.list.ordered.pillar'
+  }
+  {
+    'begin': '\\[\\[\\['
+    'end': ']]]([^\\S\\n]*[\\n])?'
+    'name': 'markup.raw.block.pillar'
+  }
+  {
+    'match': '%.+$'
+    'name': 'comment.percentage.pillar'
+  }
+  {
+    'match': '@\\w+'
+    'name': 'entity.name.tag'
   }
 ]
-
-'scopeName': 'source.gfm.pillar'
+'scopeName': 'source.pillar'
