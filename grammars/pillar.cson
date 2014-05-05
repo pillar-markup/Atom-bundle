@@ -58,7 +58,7 @@
     'name': 'markup.raw.block.pillar'
   }
   {
-    'match': '%.+$'
+    'match': '%.*$'
     'name': 'comment.percentage.pillar'
   }
   {
