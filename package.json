@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Uko/language-pillar.git"
+    "url": "https://github.com/pillar-markup/language-pillar.git"
   },
   "bugs": {
-    "url": "https://github.com/Uko/language-pillar/issues"
+    "url": "https://github.com/pillar-markup/language-pillar/issues"
   }
 }
